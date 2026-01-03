@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maman Kongo - L'Excellence Culinaire Congolaise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --congo-green: #009543;
+            --congo-yellow: #ffce00;
+            --congo-red: #dc241f;
+        }
+        body {
+            background-color: #fcfcfc;
+            font-family: 'Poppins', sans-serif;
+        }
+        .serif { font-family: 'Playfair Display', serif; }
+        
+        .hero-pattern {
+            background-color: var(--congo-green);
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-congo {
+            border-radius: 24px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .card-congo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .flag-accent {
+            height: 4px;
+            width: 100px;
+            background: linear-gradient(90deg, var(--congo-green) 0%, var(--congo-yellow) 50%, var(--congo-red) 100%);
+            margin: 1rem auto;
+        }
+
+        .price-badge {
+            background: var(--congo-yellow);
+            color: #000;
+            transform: rotate(-3deg);
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- Hero Section -->
+    <header class="hero-pattern text-white pt-24 pb-32 px-4 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="uppercase tracking-[0.3em] text-sm font-bold text-yellow-400 mb-4 block">Tradition & Authenticité</span>
+            <h1 class="serif text-6xl md:text-8xl font-black italic mb-6 leading-tight">Maman Kongo</h1>
+            <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto opacity-90 leading-relaxed">
+                Le secret des fourneaux congolais enfin révélé dans un recueil de 25 recettes légendaires.
+            </p>
+            <div class="flag-accent"></div>
+        </div>
+        <!-- Decorative shape -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-16 fill-current text-gray-100">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.23,103.19,122.34,103.06,181.11,88.42,248.67,71.62,263.34,67.19,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto -mt-20 px-4 pb-20 relative z-20">
+        
+        <!-- Main CTA Card -->
+        <div class="bg-white rounded-[40px] shadow-2xl overflow-hidden flex flex-col md:flex-row mb-16">
+            <div class="md:w-1/2 bg-gray-100 relative">
+                <div class="absolute inset-0 flex items-center justify-center p-12">
+                     <div class="text-center">
+                        <i class="fa-solid fa-book-open text-8xl text-green-700 opacity-20 mb-4"></i>
+                        <p class="font-bold text-gray-400 uppercase tracking-widest text-sm">Aperçu du E-Book</p>
+                     </div>
+                </div>
+                <!-- Image illustrative simulée -->
+                <div class="h-full w-full bg-cover bg-center min-h-[300px]" style="background-image: url('https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80');"></div>
+            </div>
+            <div class="md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
+                <div class="price-badge inline-block self-start px-4 py-1 font-black text-xl mb-4 shadow-md">
+                    1.500 FCFA
+                </div>
+                <h2 class="serif text-4xl font-bold mb-6 text-gray-800">Le Guide de la Femme Congolaise</h2>
+                <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                    Découvrez 25 fiches techniques détaillées : du choix des produits au marché jusqu'à la remontée de l'huile de palme. 
+                </p>
+                
+                <a href="https://wa.me/242068550226?text=Bonjour%20Maman%20Kongo%2C%20je%20souhaite%20commander%20le%20livre%20num%C3%A9rique%20des%2025%20recettes." 
+                   target="_blank"
+                   class="btn-whatsapp flex items-center justify-center gap-4 text-white px-8 py-5 rounded-2xl text-xl font-black tracking-wide hover:scale-105 transition-transform">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                    COMMANDER VIA WHATSAPP
+                </a>
+                <p class="text-center mt-4 text-xs text-gray-400 font-bold uppercase">Paiement Mobile Money • Envoi PDF immédiat</p>
+            </div>
+        </div>
+
+        <!-- Food Showcase Grid -->
+        <div class="text-center mb-12">
+            <h3 class="serif text-4xl font-black mb-2">Au Menu de votre Guide</h3>
+            <p class="text-gray-500">Un voyage sensoriel à travers 25 chefs-d'œuvre</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="card-congo bg-white p-8">
+                <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-leaf text-2xl text-green-600"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4">Les Incontournables</h4>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-green-500"></div> Saka-Saka (Pondu)</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-green-500"></div> Fumbwa à l'arachide</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-green-500"></div> Ngai-Ngai (Oseille)</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-green-500"></div> Matembele</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-congo bg-white p-8 border-t-8 border-[#ffce00]">
+                <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-drumstick-bite text-2xl text-yellow-600"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4">Grillades & Viandes</h4>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-yellow-500"></div> Poulet à la Moambe</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-yellow-500"></div> Ntaba (Chèvre braisé)</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-yellow-500"></div> Poulet Mayo</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-yellow-500"></div> Kamundele</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-congo bg-white p-8 border-t-8 border-[#dc241f]">
+                <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-fish text-2xl text-red-600"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4">Poissons & Eau Douce</h4>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-red-500"></div> Liboke de Capitaine</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-red-500"></div> Poisson Thomson grillé</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-red-500"></div> Maboke d'Anguille</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-red-500"></div> Makayabu (Salé)</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="serif text-3xl italic mb-4">Maman Kongo</h2>
+            <p class="text-zinc-500 mb-8 font-light tracking-widest">L'HÉRITAGE CULINAIRE D'UN PEUPLE</p>
+            
+            <div class="flex justify-center gap-8 mb-12">
+                <a href="#" class="w-12 h-12 rounded-full border border-zinc-800 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full border border-zinc-800 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full border border-zinc-800 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <p class="text-xs text-zinc-600">&copy; 2026 Maman Kongo - République du Congo / RDC. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
